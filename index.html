@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>KITTY CAFE SURVEY FORM</title>
+    <h1 id="title">KITTY CAFE SURVEY FORM</h1>
+    <h2 id="description">Help us improve our cafe!</h2>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed&family=VT323&display=swap"
+        rel="stylesheet">
+</head>
+
+<main>
+    <form id="survey-form">
+
+        <body>
+            <fieldset>
+                <div class="data">
+                    <p class="data">About you:</p>
+                    <label id="name-label">Name: <input required id="name" type="text" placeholder="Enter your name"
+                            class="data">
+                    </label>
+                    <label id="email-label">Email: <input required id="email" type="email"
+                            placeholder="Enter your email" class="data"> </label>
+                    <label id="number-label">Age: <input required id="number" type="number" min="13" max="100"
+                            placeholder="Enter your age" class="data">
+                    </label>
+                </div>
+            </fieldset>
+            <hr>
+
+            <fieldset>
+                <div class="reason">
+                    <p>1. You come to Kitty Cafe to:</p>
+                    <select id="dropdown" class="reason">
+                        <option value="1">Select one </option>
+                        <option value="2">Drink a coffee </option>
+                        <option value="3">Eat a dessert </option>
+                        <option value="4">Make friends </option>
+                        <option value="5">Study or working </option>
+                </div>
+                </select>
+            </fieldset>
+            <fieldset>
+                <div class="favorite">
+                    <p class="favorite">2. What's your favorite item on our menu?</p>
+                </div>
+                <label>Coffee</label>
+                <select id="dropdown" class="coffee">
+                    <option value="1">Select one</option>
+                    <option value="2">Expresso</option>
+                    <option value="3">Americano</option>
+                    <option value="4">Mocha</option>
+                    <option value="5">Cappuccino</option>
+                    <option value="6">Caramel Macchiato</option>
+                </select>
+                <div class="first-icon">
+                    <img src="https://images.vexels.com/media/users/3/156767/isolated/lists/229408895847d8dabf22167e049c88b7-icone-plano-de-xicara-de-cafe-quente.png"
+                        alt="first-icon">
+                </div>
+
+                <label>Desserts</label>
+                <select id="dropdown" class="desserts">
+                    <option value="1">Select one</option>
+                    <option value="2">Donut</option>
+                    <option value="3">Cherry pie</option>
+                    <option value="4">Cheesecake</option>
+                    <option value="5">Cupcake</option>
+                </select>
+                <div class="sec-icon">
+                    <img src="https://images.vexels.com/media/users/3/210937/isolated/preview/2776b8c63f70036689c5d63b26fc83f2-cupcake-polvilhado-com-canudo-de-cobertura.png"
+                        alt="sec-icon">
+                </div>
+
+
+            </fieldset>
+            <fieldset>
+                <p>3. What improvements would you like to see? (Check all that apply)</p>
+                <label>
+
+                    <input name="prefer" value="more-coffee-flavors" type="checkbox" class="input-checkbox"> More Coffee
+                    Flavors
+                </label>
+                <label>
+
+                    <input name="prefer" value="more-dessert-options" type="checkbox" class="input-checkbox"> More
+                    Dessert Options
+                </label>
+                <label>
+
+                    <input name="prefer" value="kids-space" type="checkbox" class="input-checkbox"> Kids Space
+                </label>
+                <label>
+
+                    <input name="prefer" value="pet-space" type="checkbox" class="input-checkbox"> Pet Space
+                </label>
+                <label>
+
+                    <input name="prefer" value="fastest-internet" type="checkbox" class="input-checkbox"> Fastest
+                    Internet
+                </label>
+                <label>
+
+                    <input name="prefer" value="other" type="checkbox" class="input-checkbox"> Other
+                </label>
+            </fieldset>
+            <fieldset>
+                <div class="recommend">
+                    <p>4. Would you recommend our coffee to a friend?</p>
+                    <label>
+                        <input name="user-recommend" value="yes" type="radio" class="input-radio" checked>Yes
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="no" type="radio" class="input-radio">No
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+                    </label>
+                </div>
+            </fieldset>
+
+
+            <hr>
+            <fieldset>
+                <p>Any comments or suggestions?</p>
+                <textarea placeholder="Enter your comment here..."></textarea>
+                <div class="container">
+                    <button id="submit" type="submit"> Submit </button>
+                </div>
+
+
+            </fieldset>
+
+
+
+
+            <footer>
+    </form>
+</main>
+</body>
+</footer>
+
+</html>
