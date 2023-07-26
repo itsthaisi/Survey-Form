@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style.css">
     <title>KITTY CAFE SURVEY FORM</title>
     <h1 id="title">KITTY CAFE SURVEY FORM</h1>
     <h2 id="description">Help us improve our cafe!</h2>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed&family=VT323&display=swap"
-        rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=VT323&display=swap" rel="stylesheet">
+</header>
 
 <main>
     <form id="survey-form">
@@ -32,8 +31,10 @@
             <hr>
 
             <fieldset>
+                <div class="to">
+                    <p class="to">1. You come to Kitty Cafe to:</p>
+                </div>
                 <div class="reason">
-                    <p>1. You come to Kitty Cafe to:</p>
                     <select id="dropdown" class="reason">
                         <option value="1">Select one </option>
                         <option value="2">Drink a coffee </option>
@@ -44,10 +45,16 @@
                 </select>
             </fieldset>
             <fieldset>
-                <div class="favorite">
-                    <p class="favorite">2. What's your favorite item on our menu?</p>
+                <div class="favorite-item">
+                    <p class="favorite-item">2. What's your favorite item on our menu?</p>
                 </div>
-                <label>Coffee</label>
+                <div class="first-icon">
+                    <img src="https://images.vexels.com/media/users/3/156767/isolated/lists/229408895847d8dabf22167e049c88b7-icone-plano-de-xicara-de-cafe-quente.png"
+                        alt="first-icon">
+                </div>
+                <div class="label-coffee">
+                    <label class="label-coffee">Coffee</label>
+                </div>
                 <select id="dropdown" class="coffee">
                     <option value="1">Select one</option>
                     <option value="2">Expresso</option>
@@ -56,12 +63,10 @@
                     <option value="5">Cappuccino</option>
                     <option value="6">Caramel Macchiato</option>
                 </select>
-                <div class="first-icon">
-                    <img src="https://images.vexels.com/media/users/3/156767/isolated/lists/229408895847d8dabf22167e049c88b7-icone-plano-de-xicara-de-cafe-quente.png"
-                        alt="first-icon">
+               
+                <div class="label-desserts">
+                    <label class="label-desserts">Desserts</label>
                 </div>
-
-                <label>Desserts</label>
                 <select id="dropdown" class="desserts">
                     <option value="1">Select one</option>
                     <option value="2">Donut</option>
@@ -108,7 +113,7 @@
             </fieldset>
             <fieldset>
                 <div class="recommend">
-                    <p>4. Would you recommend our coffee to a friend?</p>
+                    <p class="recommend">4. Would you recommend our coffee to a friend?</p>
                     <label>
                         <input name="user-recommend" value="yes" type="radio" class="input-radio" checked>Yes
                     </label>
@@ -124,7 +129,9 @@
 
             <hr>
             <fieldset>
-                <p>Any comments or suggestions?</p>
+                <div class="comments">
+                    <p class="comments">Any comments or suggestions?</p>
+                </div>
                 <textarea placeholder="Enter your comment here..."></textarea>
                 <div class="container">
                     <button id="submit" type="submit"> Submit </button>

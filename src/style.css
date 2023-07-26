@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=VT323&display=swap');
 
 .data {
     text-align: center;
+    display: inline-flexbox;
 }
+
 
 h1 {
     font-family: 'VT323', monospace;
@@ -22,12 +24,16 @@ h2 {
 
 p {
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: 16px;
+    text-align: left;
+    font-size: 18px;
     margin-top: 10px;
 
 }
 
+
+.comments {
+    text-align: center;
+}
 
 label {
     font-family: 'Montserrat', sans-serif;
@@ -35,8 +41,13 @@ label {
 }
 
 main {
-    padding: 28px;
     background-color: rgba(255, 255, 255, 0.749);
+    border-radius: 15px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 600px;
 }
 
 body {
@@ -46,35 +57,44 @@ body {
     margin-right: auto;
     padding: 20px;
     max-width: 650px;
-    background-image: url(https://i.pinimg.com/originals/72/d8/b2/72d8b2da120e194dd8b3fc25ffb6fddc.jpg)
+    background-image: url(https://www.artepapeldecor.com.br/media/com_eshop/products/resized/Papel-de-Parede-Lullaby-227-2-500x500.jpg);
 }
 
 #name {
     width: 45%;
-    margin-left: 10px;
+    margin-left: 2x;
     text-align: left;
+    margin-bottom: 10px;
 }
 
 #email {
     width: 45%;
-    margin-left: 13px;
+    margin-left: 2px;
     text-align: left;
+    margin-bottom: 10px;
 }
+
 
 #number {
     width: 45%;
-    margin-left: 26px;
+    margin-left: 14px;
     text-align: left;
+    margin-bottom: 10px;
 }
 
-.reason {
-    display: inline;
-    margin-left: 180px;
-    margin-top: -80px;
-    margin-bottom: 20px;
-    width: 45%;
-    text-align: center;
 
+.to {
+    margin-bottom: -20px;
+}
+
+
+.reason {
+    display: flex;
+    margin-left: 130px;
+    margin-top: -1px;
+    margin-bottom: 30px;
+    width: 50%;
+    height: 20px;
 }
 
 .favorite {
@@ -84,37 +104,62 @@ body {
 
 img {
     width: 32px;
-    margin-left: 180px;
-    margin-top: -30px;
-    margin-bottom: 20px;
+    margin-left: -3px;
+    margin-top: -20px;
+    margin-bottom: -3px;
 }
 
 
 .sec-icon {
     width: 32px;
-    margin-left: 10px;
-    margin-top: 0px;
+    margin-left: -3px;
+    margin-top: -17px;
     margin-bottom: 20px;
 }
 
+.favorite-item {
+    margin-bottom: 40px;
+
+}
+
+.label-coffee {
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+    color: rgb(90, 56, 56);
+    margin-left: 19px;
+    margin-top: -25px;
+}
 
 .coffee {
     display: flex;
-    margin-left: 60px;
-    margin-top: -20px;
-    width: 18%;
+    margin-left: 100px;
+    margin-top: -22px;
+    width: 30%;
     height: 20px;
+}
+
+.label-desserts {
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+    color: rgb(90, 56, 56);
+    margin-left: 20px;
+    margin-top: 37px;
+    margin-bottom: 2px;
 }
 
 .desserts {
     display: flex;
-    margin-left: 76px;
-    margin-top: -20px;
-    width: 18%;
+    margin-left: 130px;
+    margin-top: -22px;
+    width: 30%;
     height: 20px;
-
-
 }
+
+.recommend {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 textarea {
     margin-left: 50px;
@@ -128,16 +173,19 @@ textarea {
 
 button {
     display: block;
-    margin-left: 254px;
+    margin-left: 230px;
     margin-top: 10px;
-    width: 18%;
+    width: 25%;
     height: 30px;
     border-radius: 15px;
-    background-color: rgb(243, 62, 150);
+    background-color: rgb(90, 56, 56);
     color: rgb(255, 255, 255);
     border-style: double;
     border-color: rgb(255, 255, 255);
+    font-family: 'VT323', monospace;
+    font-size: 20px;
 }
+
 
 
 @keyframes container {
@@ -166,12 +214,11 @@ fieldset {
 }
 
 hr {
-    padding: 0.2px;
-    background-color: rgb(243, 62, 150);
-    border-color: rgb(243, 62, 150);
+    padding: 0.3px;
+    background-color: rgb(90, 56, 56);
     margin-top: 10px;
 }
 
 footer {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
